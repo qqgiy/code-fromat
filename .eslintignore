@@ -1,0 +1,11 @@
+# Ignore artifacts:
+dist
+node_modules
+
+# Ignore files:
+yarn.lock
+.eslintrc.js
+commitlint.config.js
+
+# Ignore all HTML files:
+*.html

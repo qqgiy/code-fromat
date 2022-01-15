@@ -1,0 +1,32 @@
+{
+  "name": "code-format",
+  "version": "1.0.0",
+  "description": "project code format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qqgiy/code-fromat.git"
+  },
+  "keywords": [
+    "prettier"
+  ],
+  "author": "qqgiy",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.2",
+    "@commitlint/config-conventional": "^16.0.0",
+    "eslint": "^8.6.0",
+    "eslint-plugin-react": "^7.28.0",
+    "husky": "^7.0.4",
+    "lint-staged": ">=10",
+    "prettier": "^2.5.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
